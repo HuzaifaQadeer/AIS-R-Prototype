@@ -1,0 +1,7 @@
+com\ais\model\ManagementModel.class
+com\ais\model\RecruitModel.class
+com\ais\tcpserver\TCPServer.class
+com\ais\tcpserver\util\DBManager.class
+com\ais\model\AdminModel.class
+com\ais\tcpserver\Connection.class
+com\ais\model\DashboardDTO.class

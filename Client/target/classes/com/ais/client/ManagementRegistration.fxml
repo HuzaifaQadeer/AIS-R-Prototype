@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ais.client.ManagementRegistrationController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane prefHeight="98.0" prefWidth="805.0" style="-fx-background-color: linear-gradient(#9c367d,  #581845);" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="324.0" layoutY="32.0" text="AIS-R-Ehanced" textFill="#fcfafa">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="252.0" layoutY="14.0" text="Management Registration Form">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="saveHandler" layoutX="549.0" layoutY="371.0" mnemonicParsing="false" onAction="#saveHandler" prefHeight="35.0" prefWidth="208.0" style="-fx-background-color: #581845;" text="Save Management" textFill="#f8f7f7" />
+                  <TextField fx:id="txtFullName" layoutX="55.0" layoutY="93.0" prefHeight="32.0" prefWidth="334.0" promptText="Full Name" />
+                  <TextField fx:id="txtAddress" layoutX="422.0" layoutY="93.0" prefHeight="32.0" prefWidth="334.0" promptText="Address" />
+                  <Label layoutX="55.0" layoutY="66.0" text="Full Name">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="422.0" layoutY="66.0" text="Address">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="55.0" layoutY="136.0" text="Phone Number">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="422.0" layoutY="136.0" text="Email Address">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPhoneNo" layoutX="55.0" layoutY="161.0" prefHeight="32.0" prefWidth="334.0" promptText="Phone Number" />
+                  <TextField fx:id="txtEmail" layoutX="422.0" layoutY="161.0" prefHeight="32.0" prefWidth="334.0" promptText="Email Address" />
+                  <Label layoutX="55.0" layoutY="203.0" text="Username">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUserName" layoutX="55.0" layoutY="228.0" prefHeight="32.0" prefWidth="334.0" promptText="Username" />
+                  <Label layoutX="422.0" layoutY="203.0" text="Password">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPassword" layoutX="422.0" layoutY="228.0" prefHeight="32.0" prefWidth="334.0" promptText="Password" />
+                  <Label layoutX="55.0" layoutY="273.0" text="Position Type">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbPosition" layoutX="55.0" layoutY="298.0" prefHeight="32.0" prefWidth="335.0" promptText="Position Type" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

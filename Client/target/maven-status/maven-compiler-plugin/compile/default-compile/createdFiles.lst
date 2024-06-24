@@ -1,0 +1,16 @@
+com\ais\model\ManagementModel.class
+com\ais\model\RecruitModel.class
+com\ais\client\ManangementPanelController.class
+com\ais\client\AdminRegistrationController.class
+com\ais\model\DashboardDTO.class
+module-info.class
+com\ais\client\RecruitsPanelController.class
+com\ais\client\RecruitsRegistrationController.class
+com\ais\client\App.class
+com\ais\client\LoginController.class
+com\ais\client\RegisterController.class
+com\ais\client\constraint\Constraints.class
+com\ais\client\ManagementRegistrationController.class
+com\ais\client\AdminPanelController.class
+com\ais\util\Session.class
+com\ais\model\AdminModel.class

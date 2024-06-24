@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ais.client.ManangementPanelController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <AnchorPane prefHeight="633.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(#9c367d,  #581845);" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="594.0" mnemonicParsing="false" onAction="#logoutHandler" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #881845;" text="Logout" textFill="#c9c6c6" />
+                  <Button fx:id="dashboard" layoutY="70.0" mnemonicParsing="false" onAction="#handleNav" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #881845; -fx-alignment: LEFT;" text="Dashboard" textFill="#bcb6b6" />
+                  <Label layoutX="31.0" layoutY="22.0" text="AIS-R-Enhanced" textFill="#fcf9f9">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="add_recruits" layoutY="109.0" mnemonicParsing="false" onAction="#handleNav" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #881845; -fx-alignment: left;" text="Add Recruits" textFill="#aeabab" />
+                  <Button fx:id="report" layoutY="193.0" mnemonicParsing="false" onAction="#handleNav" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #881845; -fx-alignment: left;" text="Reports" textFill="#b9b3b3" />
+                  <Button fx:id="management" layoutY="234.0" mnemonicParsing="false" onAction="#handleNav" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #881845; -fx-alignment: left;" text="Management Staff" textFill="#bcb6b6" />
+                  <Button fx:id="update_recruits" layoutX="3.0" layoutY="152.0" mnemonicParsing="false" onAction="#handleNav" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #881845; -fx-alignment: left;" text="Update Recruits" textFill="#aeabab" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="556.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="231.0" layoutY="24.0" text="Management Panel">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="UpdateRecruitsPane" layoutX="18.0" layoutY="69.0" prefHeight="549.0" prefWidth="571.0" style="-fx-background-color: #f0e2f5;">
+                     <children>
+                        <AnchorPane layoutY="16.0" prefHeight="483.0" prefWidth="574.0">
+                           <children>
+                              <Label layoutX="18.0" layoutY="14.0" text="Update New Recruit">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtUpdFullName" layoutX="18.0" layoutY="158.0" prefHeight="32.0" prefWidth="234.0" promptText="Full Name" />
+                              <TextField fx:id="txtUpdAddress" layoutX="298.0" layoutY="161.0" prefHeight="32.0" prefWidth="253.0" promptText="Address" />
+                              <Label layoutX="18.0" layoutY="131.0" text="Full Name">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="134.0" text="Address">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="18.0" layoutY="201.0" text="Username">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="204.0" text="Password">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtUpdUserName" layoutX="17.0" layoutY="226.0" prefHeight="32.0" prefWidth="233.0" promptText="Username" />
+                              <TextField fx:id="txtUpdPassword" layoutX="299.0" layoutY="229.0" prefHeight="32.0" prefWidth="251.0" promptText="Password" />
+                              <Label layoutX="18.0" layoutY="268.0" text="Phone Number">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtUpdPhoneNo" layoutX="17.0" layoutY="293.0" prefHeight="32.0" prefWidth="233.0" promptText="Phone Number" />
+                              <Label layoutX="298.0" layoutY="271.0" text="Email Address">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtUpdEmail" layoutX="300.0" layoutY="296.0" prefHeight="32.0" prefWidth="251.0" promptText="Email Address" />
+                              <Label layoutX="21.0" layoutY="338.0" text="Interview Date">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="341.0" text="Highest Qualification Level">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dtPkUpdInterviewDate" layoutX="19.0" layoutY="366.0" prefHeight="32.0" prefWidth="233.0" promptText="Select Interview Date" />
+  
+                              <TextField fx:id="txtUpdSearchUserName" layoutX="18.0" layoutY="70.0" prefHeight="32.0" prefWidth="334.0" promptText="Search by Username" />
+                              <Button layoutX="374.0" layoutY="69.0" mnemonicParsing="false" onAction="#searchRecruitHandler" prefHeight="32.0" prefWidth="181.0" style="-fx-background-color: #581845;" text="Search" textFill="#f8f7f7" />
+                              <Label layoutX="22.0" layoutY="411.0" prefHeight="19.0" prefWidth="102.0" text="Department">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbUpdQualification" layoutX="300.0" layoutY="366.0" prefHeight="32.0" prefWidth="254.0" promptText="Highest Qualification Level" />
+                              <ComboBox fx:id="cmbDepartment" layoutX="20.0" layoutY="437.0" prefHeight="32.0" prefWidth="232.0" promptText="Department" />
+                           </children>
+                        </AnchorPane>
+                        <Button layoutX="365.0" layoutY="499.0" mnemonicParsing="false" onAction="#updateRecruitHandler" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: #581845;" text="Update Recruit" textFill="#f8f7f7" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="AddRecruitsPane" layoutX="23.0" layoutY="69.0" prefHeight="546.0" prefWidth="562.0" style="-fx-background-color: #f0e2f5;">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="18.0" layoutY="14.0" text="Add New Recruit">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="359.0" layoutY="357.0" mnemonicParsing="false" onAction="#saveRecruitHandler" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: #581845;" text="Save Recruit" textFill="#f8f7f7" />
+                              <TextField fx:id="txtAddFullName" layoutX="18.0" layoutY="93.0" prefHeight="32.0" prefWidth="234.0" promptText="Full Name" />
+                              <TextField fx:id="txtAddAddress" layoutX="298.0" layoutY="93.0" prefHeight="32.0" prefWidth="253.0" promptText="Address" />
+                              <Label layoutX="18.0" layoutY="66.0" text="Full Name">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="66.0" text="Address">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="18.0" layoutY="136.0" text="Username">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="136.0" text="Password">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtAddUserName" layoutX="17.0" layoutY="161.0" prefHeight="32.0" prefWidth="233.0" promptText="Username" />
+                              <TextField fx:id="txtAddPassword" layoutX="299.0" layoutY="161.0" prefHeight="32.0" prefWidth="251.0" promptText="Password" />
+                              <Label layoutX="18.0" layoutY="203.0" text="Phone Number">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtAddPhoneNo" layoutX="17.0" layoutY="228.0" prefHeight="32.0" prefWidth="233.0" promptText="Phone Number" />
+                              <Label layoutX="298.0" layoutY="203.0" text="Email Address">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtAddEmail" layoutX="300.0" layoutY="228.0" prefHeight="32.0" prefWidth="251.0" promptText="Email Address" />
+                              <Label layoutX="21.0" layoutY="273.0" text="Interview Date">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="273.0" text="Highest Qualification Level">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dtPkAddInteviewDate" layoutX="16.0" layoutY="298.0" prefHeight="32.0" prefWidth="233.0" promptText="Select Interview Date" />
+                              <ComboBox fx:id="cmbAddQualification" layoutX="301.0" layoutY="297.0" prefHeight="32.0" prefWidth="248.0" promptText="Highest Qualification Level" />
+                     
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="ReportPane" layoutX="23.0" layoutY="71.0" prefHeight="540.0" prefWidth="562.0" style="-fx-background-color: #f0e2f5;">
+                     <children>
+                        <ComboBox fx:id="cmbSort" layoutX="286.0" layoutY="8.0" onAction="#handleSort" prefHeight="32.0" prefWidth="267.0" promptText="Sort By" />
+                        <TableView fx:id="tblRecruit" accessibleRole="TABLE_VIEW" layoutX="14.0" layoutY="45.0" prefHeight="487.0" prefWidth="541.0">
+                           <columns>
+                              <TableColumn fx:id="clmId" prefWidth="51.0" text="ID" />
+                              <TableColumn fx:id="clmName" prefWidth="105.0" text="Name" />
+                              <TableColumn fx:id="clmAddress" prefWidth="82.0" text="Address" />
+                              <TableColumn fx:id="clmContact" prefWidth="68.0" text="Contact" />
+                              <TableColumn fx:id="clmEmail" prefWidth="64.0" text="Email" />
+                              <TableColumn fx:id="clmBranch" prefWidth="87.0" text="Department" />
+                              <TableColumn fx:id="clmPosition" text="Qualification" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="14.0" layoutY="14.0" text="Recruits Report">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="ManagementPane" layoutX="24.0" layoutY="72.0" prefHeight="540.0" prefWidth="562.0" style="-fx-background-color: #f0e2f5;">
+                     <children>
+                        <TableView fx:id="tblManagement" layoutX="14.0" layoutY="45.0" prefHeight="487.0" prefWidth="541.0">
+                          <columns>
+                            <TableColumn fx:id="clmMgmId" prefWidth="46.0" text="ID" />
+                            <TableColumn fx:id="clmMgmName" prefWidth="121.0" text="Name" />
+                              <TableColumn fx:id="clmMgmAddress" prefWidth="117.0" text="Address" />
+                              <TableColumn fx:id="clmMgmContact" prefWidth="71.0" text="Contact" />
+                              <TableColumn fx:id="clmMgmEmail" prefWidth="96.0" text="Email" />
+                              <TableColumn fx:id="clmMgmPosition" prefWidth="87.0" text="Position" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="14.0" layoutY="14.0" text="Management Staff">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="DashboardPane" layoutX="24.0" layoutY="70.0" prefHeight="540.0" prefWidth="560.0" style="-fx-background-color: #f0e2f5;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="22.0" text="Recruits on Different Department" textFill="#221f1f">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8dbec4" height="69.0" layoutX="17.0" layoutY="58.0" stroke="#581845" strokeType="INSIDE" width="167.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8dbec4" height="69.0" layoutX="197.0" layoutY="58.0" stroke="#581845" strokeType="INSIDE" width="167.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8dbec4" height="69.0" layoutX="379.0" layoutY="58.0" stroke="#581845" strokeType="INSIDE" width="167.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8dbec4" height="69.0" layoutX="17.0" layoutY="149.0" stroke="#581845" strokeType="INSIDE" width="167.0" />
+                        <Label layoutX="73.0" layoutY="67.0" text="Software">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="250.0" layoutY="67.0" text="Aerospace">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="429.0" layoutY="67.0" text="Mechanical">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="33.0" layoutY="156.0" text="Electronics Engineering">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAerospace" layoutX="272.0" layoutY="93.0" text="0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMechanical" layoutX="454.0" layoutY="93.0" text="0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblSoftware" layoutX="90.0" layoutY="93.0" text="0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblElectronic" layoutX="90.0" layoutY="184.0" text="0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

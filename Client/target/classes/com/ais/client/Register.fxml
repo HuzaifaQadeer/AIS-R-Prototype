@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ais.client.RegisterController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <AnchorPane prefHeight="633.0" prefWidth="402.0" style="-fx-background-color: linear-gradient(#9c367d,  #581845);" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="116.0" layoutY="166.0" text="AIS-R-Enhanced" textFill="#f5f5f5">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="633.0" prefWidth="407.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="114.0" layoutY="96.0" text="USER REGISTRATION" textFill="#581845">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="registerRecruitButton" layoutX="53.0" layoutY="328.0" mnemonicParsing="false" onAction="#registerRecruitHandler" prefHeight="31.0" prefWidth="307.0" style="-fx-background-color: #581845;" text="Enter Recruit Details" textFill="#f8f8f8" />
+                  <Label layoutX="54.0" layoutY="579.0" prefHeight="17.0" prefWidth="152.0" text="Already have account?" textFill="#581845">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loginButton" layoutX="202.0" layoutY="575.0" mnemonicParsing="false" onAction="#loginHandler" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #581845;" text="Login" textFill="WHITE" />
+                  <Button fx:id="registerAdminButton" layoutX="53.0" layoutY="225.0" mnemonicParsing="false" onAction="#registerAdminHandler" prefHeight="31.0" prefWidth="307.0" style="-fx-background-color: #581845;" text="Enter Admin Details" textFill="#f8f8f8" />
+                  <Button fx:id="registerManagementButton" layoutX="53.0" layoutY="278.0" mnemonicParsing="false" onAction="#registerManagementHandler" prefHeight="31.0" prefWidth="307.0" style="-fx-background-color: #581845;" text="Enter Management Details" textFill="#f8f8f8" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</StackPane>
